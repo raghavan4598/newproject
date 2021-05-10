@@ -18,7 +18,7 @@ public class Login {
 
 	public static void main(String[] args) throws InvalidFormatException, IOException {
 		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver", "E:\\softwares\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "E:\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		File f = new File("E:\\selenium\\testdata.xlsx");
@@ -33,8 +33,6 @@ public class Login {
 			pswd.sendKeys(password);
 		}
 
-		
-		
 		driver.findElement(By.id("btnLogin")).click();
 	}
 }
